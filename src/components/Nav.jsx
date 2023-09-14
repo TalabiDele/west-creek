@@ -1,5 +1,6 @@
 import logo from '../assets/imgs/Logo.png'
 import { Link } from 'react-router-dom'
+import Linking from './Linking'
 
 const Nav = () => {
 	return (
@@ -9,24 +10,17 @@ const Nav = () => {
 					<img src={logo} alt='' className=' w-[12rem]' />
 				</Link>
 				<ul className=' flex font-medium w-[30rem] justify-between'>
-					<Link
-						to={'/about'}
-						className='text-white hover:text-primary duration-300 ease-in-out transition-all'
-					>
-						<li className=''>About</li>
-					</Link>
-					<Link
-						to={'/services'}
-						className='text-white hover:text-primary duration-300 ease-in-out transition-all'
-					>
-						<li className=''>Our Services</li>
-					</Link>
-					<Link
-						to={'/contact'}
-						className='text-white hover:text-primary duration-300 ease-in-out transition-all'
-					>
-						<li className=''>Contact us</li>
-					</Link>
+					<li>
+						<Linking link={'/about'} text={'About'} />
+					</li>
+
+					<li>
+						<Linking link={'/services'} text={'Our Services'} />
+					</li>
+
+					<li>
+						<Linking link={'/contact'} text={'Contact us'} />
+					</li>
 				</ul>
 			</div>
 		</div>

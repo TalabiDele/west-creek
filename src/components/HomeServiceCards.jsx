@@ -5,7 +5,7 @@ const HomeServiceCards = ({ icon, header, paragraph, color }) => {
 	return (
 		<div>
 			<div
-				className={`${color} p-[1rem] text-white w-[20rem] h-[20rem] flex items-center bg-background bg-cover bg-center`}
+				className={`${color} p-[1rem] text-white w-[20rem] h-[20rem] flex items-center bg-background bg-cover bg-center bg-blend-overlay`}
 			>
 				<div className='w-[90%] mx-auto flex flex-col justify-between h-[80%]'>
 					<div className=' text-4xl mb-[1rem]'>{icon}</div>
