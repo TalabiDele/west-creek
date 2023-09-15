@@ -17,14 +17,13 @@ const ContactUs = () => {
 							<h1 className=' text-2xl font-bold'>Phone</h1>
 							<ul className=' text-sm'>
 								<li>(234)80 9143 2359</li>
-								<li>(234)80 2661 6038</li>
 								<li>(234)70 8551 1861</li>
 							</ul>
 						</div>
 						<div className=' text-secondary mb-[2rem]'>
 							<h1 className=' text-2xl font-bold '>Email</h1>
 							<ul className=' text-sm'>
-								<li>info@westcreekresources.com</li>
+								<li>info@westcreekresourceslimited.org</li>
 							</ul>
 						</div>
 						<div className=' text-secondary mb-[2rem]'>
