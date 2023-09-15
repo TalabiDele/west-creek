@@ -179,15 +179,15 @@ const Nav = () => {
 										: 'max-md:hidden'
 								} flex font-medium w-[30rem] justify-between max-lg:w-[20rem] `}
 							>
-								<li className=' mb-[4rem]'>
+								<li className=' mb-[4rem]' onClick={() => setIsOpen(false)}>
 									<Linking link={'/about'} text={'About'} />
 								</li>
 
-								<li className=' mb-[4rem]'>
+								<li className=' mb-[4rem]' onClick={() => setIsOpen(false)}>
 									<Linking link={'/services'} text={'Our Services'} />
 								</li>
 
-								<li className=' mb-[4rem]'>
+								<li className=' mb-[4rem]' onClick={() => setIsOpen(false)}>
 									<Linking link={'/contact'} text={'Contact us'} />
 								</li>
 							</motion.ul>
@@ -303,15 +303,24 @@ const Nav = () => {
 										: 'max-md:hidden'
 								} flex font-medium w-[30rem] justify-between max-lg:w-[20rem] `}
 							>
-								<li className=' max-md:mb-[4rem]'>
+								<li
+									className=' max-md:mb-[4rem]'
+									onClick={() => setIsOpen(false)}
+								>
 									<Linking link={'/about'} text={'About'} />
 								</li>
 
-								<li className=' max-md:mb-[4rem]'>
+								<li
+									className=' max-md:mb-[4rem]'
+									onClick={() => setIsOpen(false)}
+								>
 									<Linking link={'/services'} text={'Our Services'} />
 								</li>
 
-								<li className=' max-md:mb-[4rem]'>
+								<li
+									className=' max-md:mb-[4rem]'
+									onClick={() => setIsOpen(false)}
+								>
 									<Linking link={'/contact'} text={'Contact us'} />
 								</li>
 							</motion.ul>
