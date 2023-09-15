@@ -1,5 +1,6 @@
 import Headers from './Headers'
 import WhyCards from './WhyCards'
+import { motion } from 'framer-motion'
 
 const Why = () => {
 	return (
@@ -7,7 +8,12 @@ const Why = () => {
 			<div className=' w-[90vw] mx-auto'>
 				<Headers text={'Why Choose West Creek Resources'} />
 
-				<div className='grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:justify-items-center'>
+				<motion.div
+					initial={{ opacity: 0, scale: 0, x: 100 }}
+					whileInView={{ opacity: 1, scale: 1, x: 0 }}
+					transition={{ delayChildren: 0.5 }}
+					className='grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:justify-items-center'
+				>
 					<WhyCards
 						header={'Expertise'}
 						text={
@@ -50,7 +56,7 @@ const Why = () => {
 							'Our services are designed to optimize your IT spending and maximize your ROI.'
 						}
 					/>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	)

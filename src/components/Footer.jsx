@@ -1,11 +1,16 @@
 import logo from '../assets/imgs/Logo.png'
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'
 import Linking from './Linking'
+import { motion } from 'framer-motion'
 
 const Footer = () => {
 	return (
-		<div className=' bg-secondary bg-background py-[4rem] bg-cover bg-center bg-blend-overlay'>
-			<div className=' w-[90vw] mx-auto flex justify-between max-md:flex-col max-md:items-center max-md:text-center max-md:h-[25rem]'>
+		<div className=' bg-secondary bg-background py-[4rem] bg-cover bg-center bg-blend-overlay overflow-y-hidden'>
+			<motion.div
+				initial={{ opacity: 0, scale: 0, x: 100 }}
+				whileInView={{ opacity: 1, scale: 1, x: 0 }}
+				className=' w-[90vw] mx-auto flex justify-between max-md:flex-col max-md:items-center max-md:text-center max-md:h-[25rem]'
+			>
 				<div className=' w-[20rem]'>
 					<img
 						src={logo}
@@ -36,7 +41,7 @@ const Footer = () => {
 						<FaInstagram />
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	)
 }

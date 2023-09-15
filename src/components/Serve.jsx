@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { MdMiscellaneousServices, MdSecurity } from 'react-icons/md'
 import { IoMdAnalytics } from 'react-icons/io'
 import { FaCode } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 const Serve = () => {
 	const services = [
@@ -84,16 +85,25 @@ const Serve = () => {
 	]
 
 	return (
-		<div>
-			<div className=' grid grid-cols-3 justify-items-center my-[4rem] max-lg:grid-cols-2 max-sm:grid-cols-1'>
+		<div className='overflow-x-hidden'>
+			<div className=' grid grid-cols-3 justify-items-center py-[4rem] max-lg:grid-cols-2 max-sm:grid-cols-1'>
 				{services.map((e) => (
-					<div className='' key={e.id}>
+					<motion.div
+						initial={{ opacity: 0, scale: 0, x: 50 }}
+						whileInView={{ opacity: 1, scale: 1, x: 0 }}
+						className=''
+						key={e.id}
+					>
 						<ServeCards card={e} />
-					</div>
+					</motion.div>
 				))}
 			</div>
 
-			<div className=' text-center w-[40vw] mx-auto grid justify-items-center mb-[4rem] max-md:w-[60vw] max-sm:w-[90vw]'>
+			<motion.div
+				initial={{ opacity: 0, scale: 0, x: 50 }}
+				whileInView={{ opacity: 1, scale: 1, x: 0 }}
+				className=' text-center w-[40vw] mx-auto grid justify-items-center mb-[4rem] max-md:w-[60vw] max-sm:w-[90vw]'
+			>
 				<h1 className=' font-bold text-secondary text-3xl mb-[2rem]'>
 					We are here to <span className=' text-primary'>solve</span> your most
 					complex IT <span className=' text-primary'>challenges</span>
@@ -102,7 +112,7 @@ const Serve = () => {
 				<Link to={'/contact'}>
 					<Buttons type={'other'} btnText={'Contact us'} />
 				</Link>
-			</div>
+			</motion.div>
 		</div>
 	)
 }
