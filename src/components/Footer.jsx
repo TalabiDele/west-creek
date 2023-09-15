@@ -5,9 +5,13 @@ import Linking from './Linking'
 const Footer = () => {
 	return (
 		<div className=' bg-secondary bg-background py-[4rem] bg-cover bg-center bg-blend-overlay'>
-			<div className=' w-[90vw] mx-auto flex justify-between'>
+			<div className=' w-[90vw] mx-auto flex justify-between max-md:flex-col max-md:items-center max-md:text-center max-md:h-[25rem]'>
 				<div className=' w-[20rem]'>
-					<img src={logo} alt='' className=' w-[15rem] mb-[1rem]' />
+					<img
+						src={logo}
+						alt=''
+						className=' w-[15rem] mb-[1rem] max-md:mx-auto max-md:mb-[3rem]'
+					/>
 					<p className=' text-sm text-text_primary'>
 						We are not your typical IT consulting firm; we&apos;re the silent
 						architects of digital excellence, working behind the scenes to bring

@@ -8,10 +8,10 @@ const Gallery = () => {
 		<div className=' w-[90vw] mx-auto my-[4rem]'>
 			<Headers text={'Gallery'} />
 
-			<div className='grid grid-cols-3'>
-				<img src={one} alt='' className='' />
-				<img src={two} alt='' className='' />
-				<img src={three} alt='' className='' />
+			<div className='grid grid-cols-3 max-sm:grid-cols-1'>
+				<img src={one} alt='' className='max-sm:mb-[1rem]' />
+				<img src={two} alt='' className='max-sm:mb-[1rem]' />
+				<img src={three} alt='' className='max-sm:mb-[1rem]' />
 			</div>
 		</div>
 	)

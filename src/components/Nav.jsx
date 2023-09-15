@@ -9,7 +9,7 @@ const Nav = () => {
 				<Link to={'/'}>
 					<img src={logo} alt='' className=' w-[12rem]' />
 				</Link>
-				<ul className=' flex font-medium w-[30rem] justify-between'>
+				<ul className=' flex font-medium w-[30rem] justify-between max-lg:w-[20rem]'>
 					<li>
 						<Linking link={'/about'} text={'About'} />
 					</li>
