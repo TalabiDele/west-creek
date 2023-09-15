@@ -33,6 +33,7 @@ const AboutUs = () => {
 					<img
 						src={about}
 						alt=''
+						loading='lazy'
 						className=' w-[40vw] rounded-lg max-md:w-[70vw]'
 					/>
 				</motion.div>
@@ -46,6 +47,7 @@ const AboutUs = () => {
 					<img
 						src={app}
 						alt=''
+						loading='lazy'
 						className=' w-[40vw] rounded-lg max-md:w-[70vw]'
 					/>
 				</motion.div>
