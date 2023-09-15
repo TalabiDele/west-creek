@@ -60,7 +60,11 @@ const Landing = () => {
 				</motion.div>
 
 				<motion.div variants={item} size={50} className=''>
-					<img src={image} alt='' className=' w-[30rem] max-md:w-[15rem]' />
+					<img
+						src={image}
+						alt=''
+						className=' w-[30rem] max-md:h-[50vh] object-contain'
+					/>
 				</motion.div>
 			</motion.div>
 		</motion.div>
