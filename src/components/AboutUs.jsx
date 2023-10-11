@@ -14,10 +14,10 @@ const AboutUs = () => {
 				>
 					<Headers text={'Our Story'} />
 					<p className=' text-text_secondary text-sm '>
-						Established in 2017 with RC - 1395185, West Creek Resource was born
-						from the desire to craft a different narrative in the world of IT
-						consulting. Our founders saw an opportunity to merge the worlds of
-						privacy and online presence, and thus, our journey began.
+						Established in 2017 with RC - 1395185, West Creek Resources Limited
+						was born from the desire to craft a different narrative in the world
+						of IT consulting. Our founders saw an opportunity to merge the
+						worlds of privacy and online presence, and thus, our journey began.
 					</p>
 
 					{/* <div className='absolute top-[2rem] left-0 opacity-30 flex items-center'>
